@@ -1,0 +1,38 @@
+:root {
+    --bg-color: black;
+    --accent-color: #39FF14;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: #ff0000;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+header h1 {
+    color: var(--accent-color);
+    margin: 0;
+}
+
+nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
