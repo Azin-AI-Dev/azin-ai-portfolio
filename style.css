@@ -1,38 +1,106 @@
-:root {
-    --bg-color: black;
-    --accent-color: #39FF14;
-    --text-color: white;
-}
-
+/* تنظیمات عمومی برای داشتن یک ظاهر مدرن و تیره */
 body {
-    background-color: var(--bg-color);
-    color: #ff0000;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #1a1a2e; /* رنگ پس زمینه تیره */
+    color: #e4e4e4; /* رنگ متن روشن */
+    line-height: 1.6;
 }
 
+/* برای مرکز قرار گرفتن محتوا */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* استایل دهی به هدر و نوار ناوبری */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid var(--accent-color);
+    background: #0f0f29; /* نوار هدر کمی تیره تر */
+    color: #ffffff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #00bcd4 3px solid; /* نوار آبی رنگ */
 }
 
 header h1 {
-    color: var(--accent-color);
+    float: left;
     margin: 0;
 }
 
-nav a {
-    color: var(--accent-color);
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-    transition: opacity 0.3s ease;
+header nav {
+    float: right;
+    margin-top: 10px;
 }
 
-nav a:hover {
-    opacity: 0.8;
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* بخش قهرمان (Hero Section) */
+.hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+    background: #1a1a2e;
+}
+
+.hero h2 {
+    color: #00bcd4; /* رنگ آبی برای عنوان های اصلی */
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* استایل دهی به بخش پروژه ها */
+.projects {
+    padding: 30px 0;
+    background: #24243e; /* پس زمینه پروژه ها کمی روشن تر */
+}
+
+.projects h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.project-item {
+    background: #34345e;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    color: #76e1ff;
+    margin-top: 0;
+}
+
+/* استایل دهی به فوتر */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #0f0f29;
+    text-align: center;
+    border-top: #00bcd4 3px solid;
 }
