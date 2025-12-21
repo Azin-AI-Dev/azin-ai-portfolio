@@ -10,3 +10,4 @@ In this project, I act as a **Data Analyst** to transform raw financial data int
 ## 📊 Visual Insights:
 ![Strategic Report](strategic_report.png)
 *(Upload your gold and orchid chart here)*
+  
